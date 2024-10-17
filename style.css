@@ -1,0 +1,59 @@
+html,body,*{
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "DM-Sans", cursive;
+}
+h1{
+    font-size: 75px;
+}
+
+.image{
+    display: block;
+    border-radius:25px;
+    justify-content: center;
+    margin: 20px 20px;
+}
+body{
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+.container{
+    display: flex;
+    width: 90%;
+    margin: 2rem auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.article-container{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card{
+    background-color: rgb(116, 200, 245);
+    display: flex;
+    margin: 3rem auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 45%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px rgb(3, 1, 86);
+}
+
+.btn{
+    background-color: red;
+}
+
+
+
+
+
+
