@@ -46,10 +46,44 @@ body{
     height: auto;
     border-radius: 10px;
     box-shadow: 10px 5px 5px rgb(3, 1, 86);
+    transition: 0.5s;
 }
 
-.btn{
-    background-color: red;
+@keyframes scale{
+    0%{
+        transform: scale(1.25,1.25);
+        
+    }
+    25%{
+        transform: scale(1, 1);
+    }
+    50%{
+        transform: scale(0.5,0.5);
+    }
+    75%{
+        transform: scale(1, 1);
+    }
+    100%{
+        transform: scale(1.25, 1.25);
+    }
+
+}
+
+.card:hover{
+    transform: scale(1.1);
+    background-color: rgb(45, 70, 234);
+}
+
+.readmore{
+    background-color: rgb(184, 234, 234);
+}
+.readmore:hover{
+    animation: scale 1s infinite linear;
+    animation-delay: 0.15s;
+}
+
+.read{
+    align-items: center;
 }
 
 
