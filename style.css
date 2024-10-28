@@ -91,7 +91,7 @@ html {
       
     p:first-of-type:first-letter {
     float: left;
-    font-size: 7em;
+    font-size: 2em;
     line-height: 1;
     margin-top: -0.2em;
     margin-bottom: -0.2em;
