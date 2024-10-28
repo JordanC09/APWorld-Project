@@ -1,93 +1,135 @@
-html,body,*{
-    font-size: 16px;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "DM-Sans", cursive;
-}
-h1{
-    font-size: 75px;
-}
-
-.image{
-    display: block;
-    border-radius:25px;
-    justify-content: center;
-    margin: 20px 20px;
-}
-body{
-    color: white;
-    text-align: center;
-    background-color: black;
-}
-.container{
-    display: flex;
-    width: 90%;
-    margin: 2rem auto;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.article-container{
-    display: flex;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.card{
-    background-color: rgb(116, 200, 245);
-    display: flex;
-    margin: 3rem auto;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 45%;
+html {
+    font: 400 1em/1.33 "Times New Roman";
+    background-color: #191919;
+  }
+  
+  body {
+    padding-bottom: 3em;
+  }
+  
+  .profile {
+    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Sim%C3%B3n_Bol%C3%ADvar._Toro_Moreno%2C_Jos%C3%A9._1922%2C_Legislative_Palace%2C_La_Paz.png/800px-Sim%C3%B3n_Bol%C3%ADvar._Toro_Moreno%2C_Jos%C3%A9._1922%2C_Legislative_Palace%2C_La_Paz.png") center 30%;
+    box-shadow: inset 0 0 5em 1em #000;
+    height: 50vh;
+    background-size: cover;
+  }
+  
+  .profile {
+    width: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 10px 5px 5px rgb(3, 1, 86);
-    transition: 0.5s;
-}
-
-@keyframes scale{
-    0%{
-        transform: scale(1.25,1.25);
-        
+  }
+  
+  hr {
+    overflow: visible;
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+  }
+  
+  hr:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: #cccccc;
+  }
+  
+  article {
+    color: #ccc;
+  }
+  
+  article {
+    margin-left: 50%;
+    position: relative;
+    max-width: 66em;
+  }
+  
+  header {
+    text-align: center;
+    padding: 0 2em;
+  }
+  
+  h1 {
+    text-transform: uppercase;
+    font-weight: 400;
+  
+    .headline-1,
+    .headline-2 {
+      line-height: 1;
     }
-    25%{
-        transform: scale(1, 1);
+  
+    .headline-1 {
+      font-size: 10.5vw;
     }
-    50%{
-        transform: scale(0.5,0.5);
+  
+    .headline-2 {
+      font-size: 8vw;
     }
-    75%{
-        transform: scale(1, 1);
+  }
+  
+  .subheading {
+    color: #ccc;
+    font-size: 1.5625em;
+    max-width: 25em;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 1.5em;
+  }
+  
+  section {
+    column-width: 14em;
+    column-gap: 1.33em;
+    padding: 0 3em;
+      
+    p:first-of-type:first-letter {
+    float: left;
+    font-size: 7em;
+    line-height: 1;
+    margin-top: -0.2em;
+    margin-bottom: -0.2em;
+    margin-right: 0.1em;
     }
-    100%{
-        transform: scale(1.25, 1.25);
+  }
+  
+  img {
+    max-width: 100%;
+    margin-bottom: 1.33em;
+    vertical-align: middle;
+  }
+  
+  blockquote {
+    border-left: 0.5em solid #ccc;
+    font-size: 2em;
+    padding: 0.5em;
+    line-height: 1.5;
+    margin-left: 0;
+    margin-right: 0;
+    position: absolute;
+    right: 100%;
+    top: 70vh;
+    width: 9em;
+    background: #191919;
+  
+    &::before,
+    &::after {
+      color: #ccc;
+      font-size: 1.25em;
+      line-height: 0;
     }
-
-}
-
-.card:hover{
-    transform: scale(1.1);
-    background-color: rgb(45, 70, 234);
-}
-
-.readmore{
-    background-color: rgb(184, 234, 234);
-}
-.readmore:hover{
-    animation: scale 1s infinite linear;
-    animation-delay: 0.15s;
-}
-
-.read{
-    align-items: center;
-}
-
-
-
-
-
-
+  
+    &::before {
+      content: open-quote;
+    }
+  
+    &::after {
+      content: close-quote;
+    }
+  }
